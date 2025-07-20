@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trivixa ERP – Smart ERP for Schools</title>
+  <meta name="description" content="Trivixa ERP – Smart, modern school management system crafted for educational institutes.">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    [data-theme="dark"] {
+      background-color: #0f172a;
+      color: #f8fafc;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 transition-all duration-300">
+
+<!-- Navbar -->
+<nav class="bg-white dark:bg-gray-900 shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+      <img src="img.jpg" alt="Trivixa Logo" class="h-8">
+      <h1 class="text-xl font-bold">Trivixa</h1>
+    </div>
+    <div class="space-x-6 hidden md:flex">
+      <a href="#about" class="hover:text-blue-500">About</a>
+      <a href="#features" class="hover:text-blue-500">Features</a>
+      <a href="#pricing" class="hover:text-blue-500">Pricing</a>
+      <a href="#testimonials" class="hover:text-blue-500">Testimonials</a>
+      <a href="#contact" class="hover:text-blue-500">Contact</a>
+    </div>
+    <button onclick="toggleTheme()" class="text-sm bg-gradient-to-r from-blue-600 to-pink-500 text-white px-3 py-1 rounded-md">
+      Toggle Theme
+    </button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="text-center py-20 bg-gradient-to-r from-blue-600 to-pink-500 text-white">
+  <h2 class="text-4xl md:text-5xl font-bold animate__animated animate__fadeInDown">Revolutionizing School Management</h2>
+  <p class="mt-4 text-lg md:text-xl animate__animated animate__fadeInUp">One powerful platform. Admin. Teacher. Student. All connected.</p>
+  <a href="#contact" class="mt-8 inline-block bg-white text-blue-700 font-bold px-6 py-3 rounded-full shadow hover:scale-105 transition">Get Started</a>
+</section>
+
+<!-- About -->
+<section id="about" class="max-w-6xl mx-auto px-6 py-16" data-aos="fade-up">
+  <h3 class="text-3xl font-bold text-center mb-6">About Trivixa</h3>
+  <p class="text-center max-w-3xl mx-auto">Trivixa ERP is a smart, modular ERP system built for schools, coaching classes, and educational institutions. It simplifies operations across students, staff, inventory, reports, and more. Designed for both metro and rural areas with offline support.</p>
+</section>
+
+<!-- Features -->
+<section id="features" class="bg-gray-50 dark:bg-gray-800 py-16" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-10">Features</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2 text-blue-600">Admin Dashboard</h4>
+        <p>Control staff, students, fees, inventory, and reports from a powerful web interface.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2 text-blue-600">Teacher App</h4>
+        <p>Mark attendance, upload homework, and manage exams on mobile.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2 text-blue-600">Student App</h4>
+        <p>Students can view marks, assignments, notifications, and communicate easily.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2 text-blue-600">Offline Mode</h4>
+        <p>Works in rural or low-connectivity areas using sync technology.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2 text-blue-600">Inventory & Billing</h4>
+        <p>Integrated billing module suitable for jewelry institutes or shop-linked schools.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2 text-blue-600">Custom Modules</h4>
+        <p>Hostel, Transport, Library, and Custom Reports for various use cases.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="py-16" data-aos="fade-up">
+  <div class="max-w-5xl mx-auto text-center px-6">
+    <h3 class="text-3xl font-bold mb-6">Simple Pricing</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 border rounded-lg shadow hover:shadow-lg">
+        <h4 class="text-xl font-bold mb-2">Starter</h4>
+        <p class="text-4xl font-bold mb-4">Free</p>
+        <p>Basic ERP features<br/>Up to 50 students<br/>Community support</p>
+      </div>
+      <div class="p-6 border border-blue-600 rounded-lg shadow-lg transform scale-105 bg-blue-50 dark:bg-blue-900 text-blue-900 dark:text-white">
+        <h4 class="text-xl font-bold mb-2">Pro</h4>
+        <p class="text-4xl font-bold mb-4">₹999/mo</p>
+        <p>All modules<br/>Unlimited students<br/>Priority support</p>
+      </div>
+      <div class="p-6 border rounded-lg shadow hover:shadow-lg">
+        <h4 class="text-xl font-bold mb-2">Enterprise</h4>
+        <p class="text-4xl font-bold mb-4">Custom</p>
+        <p>Self-hosted setup<br/>White-label<br/>Premium SLA</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="bg-gray-100 dark:bg-gray-900 py-16" data-aos="fade-up">
+  <div class="max-w-5xl mx-auto text-center px-6">
+    <h3 class="text-3xl font-bold mb-10">What Schools Say</h3>
+    <div class="grid md:grid-cols-2 gap-6 text-left">
+      <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow">
+        <p>"We transformed completely after adopting Trivixa. Our teachers love it."</p>
+        <p class="mt-4 font-bold">– Principal, City Star School</p>
+      </div>
+      <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow">
+        <p>"The offline sync and billing features helped us serve better in rural areas."</p>
+        <p class="mt-4 font-bold">– Admin, Arya Gurukul</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-16" data-aos="fade-up">
+  <div class="max-w-4xl mx-auto text-center px-6">
+    <h3 class="text-3xl font-bold mb-6">Contact Us</h3>
+    <p class="mb-2"><strong>Email:</strong> trivixa.in@gmail.com</p>
+    <p class="mb-2"><strong>Phone:</strong> +91 8007160823</p>
+    <p class="mb-2"><strong>Instagram:</strong> <a href="https://instagram.com/trivixa.in" class="text-blue-600 hover:underline" target="_blank">trivixa.in</a></p>
+    <p><strong>Location:</strong> Pune, Maharashtra, India</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center py-4">
+  © 2025 Trivixa ERP. Crafted by Sarthak Harale with ❤️.
+</footer>
+
+<!-- JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute("data-theme");
+    html.setAttribute("data-theme", current === "dark" ? "light" : "dark");
+  }
+</script>
+
+</body>
+</html>
